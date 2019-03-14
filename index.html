@@ -19,12 +19,13 @@ randomlinks[3]="https://robotmagic.org/magic/wy5wnw"
 randomlinks[4]="https://robotmagic.org/magic/wy5z4v"
 
 function randomlink(){
-window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+// window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+  window.open(randomlinks[Math.floor(Math.random()*randomlinks.length)],'_blank');
 }
 //-->
 </script>
 <form method="post">
-<p><a target="_blank" name="B1" value="Robot Maze" onclick="randomlink()"></a></p> </form>
+<p><input type="button" name="B1" value="Robot Maze" onclick="randomlink()"></p> </form>
 
 <!--Uncomment below to use a regular text link instead
 <a href="javascript:randomlink()">Random Link</a>
